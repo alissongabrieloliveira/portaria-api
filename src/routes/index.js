@@ -14,6 +14,7 @@ import passageiroEntradaRoutes from "./passageiroEntradaRoutes.js";
 import saidaRoutes from "./saidaRoutes.js";
 import frotaSaidaRoutes from "./frotaSaidaRoutes.js";
 import frotaEntradaRoutes from "./frotaEntradaRoutes.js";
+import passageiroFrotaRoutes from "./passageiroFrotaRoutes.js";
 
 const router = express.Router();
 
@@ -30,6 +31,7 @@ router.use("/passageiros-entrada", passageiroEntradaRoutes);
 router.use("/saidas", saidaRoutes);
 router.use("/frota-saidas", frotaSaidaRoutes);
 router.use("/frota-entradas", frotaEntradaRoutes);
+router.use("/passageiros-frota", passageiroFrotaRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
