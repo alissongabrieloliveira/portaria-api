@@ -1,11 +1,15 @@
 import express from "express";
 import pool from "../database/connection.js";
+
+// Importa as rotas
 import authRoutes from "./authRoutes.js";
+import usuarioRoutes from "./usuarioRoutes.js";
 
 const router = express.Router();
 
 // Rotas
 router.use("/auth", authRoutes);
+router.use("/usuarios", usuarioRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
