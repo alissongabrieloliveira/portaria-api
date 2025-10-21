@@ -9,6 +9,7 @@ import setorRoutes from "./setorRoutes.js";
 import postoControleRoutes from "./postoControleRoutes.js";
 import pessoaRoutes from "./pessoaRoutes.js";
 import veiculoRoutes from "./veiculoRoutes.js";
+import entradaRoutes from "./entradaRoutes.js";
 
 const router = express.Router();
 
@@ -20,6 +21,7 @@ router.use("/setores", setorRoutes);
 router.use("/postos-controle", postoControleRoutes);
 router.use("/pessoas", pessoaRoutes);
 router.use("/veiculos", veiculoRoutes);
+router.use("/entradas", entradaRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
