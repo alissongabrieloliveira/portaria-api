@@ -4,12 +4,14 @@ import pool from "../database/connection.js";
 // Importa as rotas
 import authRoutes from "./authRoutes.js";
 import usuarioRoutes from "./usuarioRoutes.js";
+import tipoAcessoRoutes from "./tipoAcessoRoutes.js";
 
 const router = express.Router();
 
 // Rotas
 router.use("/auth", authRoutes);
 router.use("/usuarios", usuarioRoutes);
+router.use("/tipos-acesso", tipoAcessoRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
