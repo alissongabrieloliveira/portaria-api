@@ -11,6 +11,7 @@ import pessoaRoutes from "./pessoaRoutes.js";
 import veiculoRoutes from "./veiculoRoutes.js";
 import entradaRoutes from "./entradaRoutes.js";
 import passageiroEntradaRoutes from "./passageiroEntradaRoutes.js";
+import saidaRoutes from "./saidaRoutes.js";
 
 const router = express.Router();
 
@@ -24,6 +25,7 @@ router.use("/pessoas", pessoaRoutes);
 router.use("/veiculos", veiculoRoutes);
 router.use("/entradas", entradaRoutes);
 router.use("/passageiros-entrada", passageiroEntradaRoutes);
+router.use("/saidas", saidaRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
