@@ -7,6 +7,7 @@ import usuarioRoutes from "./usuarioRoutes.js";
 import tipoAcessoRoutes from "./tipoAcessoRoutes.js";
 import setorRoutes from "./setorRoutes.js";
 import postoControleRoutes from "./postoControleRoutes.js";
+import pessoaRoutes from "./pessoaRoutes.js";
 
 const router = express.Router();
 
@@ -16,6 +17,7 @@ router.use("/usuarios", usuarioRoutes);
 router.use("/tipos-acesso", tipoAcessoRoutes);
 router.use("/setores", setorRoutes);
 router.use("/postos-controle", postoControleRoutes);
+router.use("/pessoas", pessoaRoutes);
 
 // Endpoint de teste
 router.get("/test-db", async (req, res) => {
